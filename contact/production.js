@@ -10,6 +10,6 @@ $.fn.validator=function(){};
 $.fn.lightbox=function(){};
 ;steal.end();
 /* contact/contact.js */
-steal.plugins("jquery").resources("validator","lightbox").then(function(){$("form").validator();$("form").submit(function(){$.lightbox()})});
+steal.plugins("jquery").resources("validator","lightbox").plugins("tr/search_control").then(function(){$("form").validator();$("form").submit(function(){$.lightbox()})});
 
 });
